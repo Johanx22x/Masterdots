@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width", initial-scale="1.0" />
     <title>Masterdots</title>
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <img src="./img/logo.png" alt="Masterdots logo"/>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Form -->
+        <form action="#" method="" accept-charset="utf-8">
+            <div class="itemform">
+                <label for="nickname">Enter your nickname: </label>
+                <input type="text" name="nickname" id="nickname" />
+            </div>
+            <div class="itemform">
+                <label for="size">Game size: </label>
+                <select name="size" id="size">
+                    <option value="">-- Choose the size --</option>
+                    <option value="1">4x4</option>
+                    <option value="2">5x5</option>
+                    <option value="3">6x6</option>
+                </select>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="PLAY" />
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>HTML, CSS and JS frontend course</p>
+    </footer>
 
 </body>
 </html>

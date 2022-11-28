@@ -18,28 +18,36 @@
 
     <!-- Main -->
     <main>
+        <!-- Error message -->
+        <div>
+            <p id="error"></p>
+        </div>
+
         <!-- Form -->
-        <form action="#" method="" accept-charset="utf-8">
+        <form action="game.html" accept-charset="utf-8" id="login-form">
             <div class="itemform">
-                <label for="nickname">Enter your nickname</label>
+                <label for="nickname">Enter your nickname*</label>
                 <input type="text" name="nickname" value="@" id="nicknamea" readonly>
-                <input type="text" name="nickname" id="nickname">
+                <input type="text" name="nickname" id="nickname" required minlength="2">
             </div>
             <div>
                 <label for="email">Email</label>
                 <input type="email" name="email" value="example@gmail.com" id="email">
             </div>
             <div class="itemform">
-                <label for="size">Game size</label>
+                <label for="size">Game size*</label>
                 <select name="size" id="size">
-                    <option value="">-- Choose the size --</option>
+                    <option value="0">-- Choose the size --</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
                     <option value="3">6x6</option>
                 </select>
             </div>
             <div class="itemform">
-                <input type="submit" value="PLAY" />
+                <p>* Required fields</p>
+            </div>
+            <div class="itemform">
+                <input type="submit" value="PLAY" id="play">
             </div>
         </form>
     </main>
